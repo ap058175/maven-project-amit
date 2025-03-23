@@ -29,6 +29,15 @@ pipeline
 			}
 		}
 		
+		stage('test stage')
+		{
+			steps
+			{
+			  sh 'mvn test'
+			}
+		}
+		
+		
 		stage('Build success')
 		{
 			steps
