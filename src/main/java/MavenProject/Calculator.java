@@ -25,7 +25,7 @@ public class Calculator {
 	}
 	public void greet()
 	{
-		System.out.println("Hello Master branch");
+		System.out.println("Hello dev branch");
 	}
 	
 
