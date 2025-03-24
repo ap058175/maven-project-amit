@@ -12,8 +12,29 @@
     <version>4.13.2</version>
     <scope>test</scope>
 </dependency>
-  
+
+<dependency>
+
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>4.0.0.4121</version>
+</dependency>
   </dependencies>
+  
+  <profiles>
+
+    <profile>
+        <id>sonar-local</id>
+        <activation>
+            <activeByDefault>true</activeByDefault> 
+        </activation>
+        <properties>
+            <sonar.host.url>http://localhost:9000</sonar.host.url>
+            <sonar.token>squ_b7230c57016601f34ed062670b31a0c5000ea576</sonar.token>
+        </properties>
+    </profile>
+  </profiles>
+  
   <build>
 		<finalName>amit-calculator</finalName>
 		<plugins>

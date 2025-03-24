@@ -3,6 +3,8 @@ package MavenProject;
 public class Calculator {
 	public int sum(int a, int b)
 	{
+		int c,d;
+		c=10+5;
 		return (a+b);
 	}
 	public int diff(int a, int b)
@@ -21,6 +23,10 @@ public class Calculator {
 	{
 		return (a%b);
 	}
+	public void greet()
+	{
+		System.out.println("Hello Master branch");
+	}
 	
 
 	public static void main(String[] args) {
@@ -31,5 +37,6 @@ public class Calculator {
 		System.out.println("Mul is :"+calc.mul(20, 10));
 		System.out.println("Div is :"+calc.div(20, 10));
 		System.out.println("Mod is :"+calc.mod(20, 10));
+		calc.greet();
 	}
 }
